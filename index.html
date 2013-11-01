@@ -1,15 +1,71 @@
-<div style="width:400px;border:1px solid lightgrey;box-shadow:2px 2px 5px #979792;background-color: whitesmoke;">
-    <div style="display:inline-block;vertical-align:top;width:120px;height:120px;text-align: center;">
-        <img src="http://agent-22.github.io/mail-signature/img/avatar.jpg" alt="Photo" style="width:80px;height:80px;margin-top:12px;border: 5px solid white;box-shadow: 2px 2px 5px #979792;border-radius: 5px;" />
+<style>
+    #signature_main {
+        width: 400px;
+        border: 1px solid lightgrey;
+        box-shadow: 2px 2px 5px #979792;
+        background-color: #FDFDFD;
+    }
+    #signature_photo_box {
+        display: inline-block;
+        vertical-align: top;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+    }
+    #signature_photo {
+        width: 80px;
+        height: 80px;
+        margin: 12px auto 0 auto;
+        border: 5px solid white;
+        box-shadow: 2px 2px 5px #979792;
+        border-radius: 5px;
+        transition: background-image .5s ease-in-out;
+        background: url("http://agent-22.github.io/mail-signature/img/avatar.jpg") no-repeat;
+        background-size:80px 80px;
+    }
+    #signature_photo:hover {
+        background-image:url("img/ineat.jpg");
+    }
+    #signature_text_area {
+        display: inline-block;
+        width: 270px;
+        padding-top: 15px;
+    }
+    p {
+        margin: 0;
+    }
+    p img {
+        vertical-align: middle;
+    }
+    #signature_name {
+        margin-top: 2px;
+        font-family: sans-serif;
+    }
+    #signature_company_name {
+        margin-top: 5px;
+    }
+    #signature_phone {
+        margin-top: 5px;
+    }
+    #signature_email {
+        margin-top: 2px;
+    }
+</style>
+<div id="signature_main">
+    <div id="signature_photo_box">
+        <div id="signature_photo"></div>
     </div>
-    <div style="display:inline-block;width:270px;padding-top: 15px;">
-        <p style="margin: 2px 0px 0px 0px;font-family: fantasy;">
+    <div id="signature_text_area">
+        <p id="signature_name">
             Myname Myfirstname
         </p>
-        <p style="margin: 5px 0px 0px 0px;">
+        <p id="signature_company_name">
+            My company name
+        </p>
+        <p id="signature_phone">
             <img src="http://agent-22.github.io/mail-signature/img/mobile_phone.png" alt="" /> : +33 6 00 00 00 00
         </p>
-        <p style="margin: 0px 0px;">
+        <p id="signature_email">
             <img src="http://agent-22.github.io/mail-signature/img/mail.png" alt="" /> : <a href="mailto:myname.myfirstname@domain.com" >myname.myfirstname@domain.com</a>
         </p>
     </div>
