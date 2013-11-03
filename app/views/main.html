@@ -1,0 +1,94 @@
+<div id="form_area">
+    <form action="#">
+        Name : <input type="text" ng-model="name" /><br />
+        Company : <input type="text" ng-model="company" /><br />
+        Job : <input type="text" ng-model="job" /><br />
+        Phone : <input type="text" ng-model="phone" /><br />
+        Email : <input type="text" ng-model="email" /><br />
+        Photo URL : <input type="text" ng-model="photo_URL" /><br />
+        Company logo URL : <input type="text" ng-model="company_logo_URL" />
+    </form>
+</div>
+<div id="signature_area">
+
+    <style>
+        #signature_main {
+            width: 400px;
+            border: 1px solid lightgrey;
+            box-shadow: 2px 2px 5px #979792;
+            background-color: #FDFDFD;
+        }
+        #signature_photo_box {
+            display: inline-block;
+            vertical-align: top;
+            width: 120px;
+            height: 120px;
+        }
+        .signature_photo {
+            width: 80px;
+            height: 80px;
+            margin: 12px 0 0 15px;
+            border: 5px solid white;
+            box-shadow: 2px 2px 5px #979792;
+            border-radius: 5px;
+            -webkit-transition: opacity .5s ease-in-out;
+            -moz-transition: opacity .5s ease-in-out;
+            -o-transition: opacity .5s ease-in-out;
+            transition: opacity .5s ease-in-out;
+            position:absolute;
+        }
+        #signature_photo_avatar:hover {
+            opacity: 0;
+        }
+        #signature_text_area {
+            display: inline-block;
+            width: 270px;
+            padding-top: 15px;
+        }
+        p {
+            margin: 0;
+        }
+        p img {
+            vertical-align: middle;
+        }
+        #signature_name {
+            margin-top: 2px;
+            font-family: sans-serif;
+        }
+        #signature_company_name {
+            margin-top: 5px;
+        }
+        #signature_phone {
+            margin-top: 5px;
+        }
+        #signature_email {
+            margin-top: 2px;
+        }
+    </style>
+    <div id="signature_main">
+        <div id="signature_photo_box">
+            <img id="signature_photo_company_logo" class="signature_photo" src="{{company_logo_URL}}" alt="Company logo" />
+            <img id="signature_photo_avatar" class="signature_photo" src="{{photo_URL}}" alt="Photo" />
+        </div>
+        <div id="signature_text_area">
+            <p id="signature_name">
+                {{name}}
+            </p>
+            <p id="signature_company_name">
+                {{company}} - {{job}}
+            </p>
+            <p id="signature_phone">
+                <img src="http://agent-22.github.io/mail-signature/img/mobile_phone.png" alt="" />  {{phone}}
+            </p>
+            <p id="signature_email">
+                <img src="http://agent-22.github.io/mail-signature/img/mail.png" alt="" /> <a href="mailto:{{email}}" >{{email}}</a>
+            </p>
+        </div>
+    </div>
+
+</div>
+<div id="code_area">
+    <code>
+        Code renderer ...
+    </code>
+</div>

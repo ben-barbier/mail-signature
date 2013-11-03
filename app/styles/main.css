@@ -1,0 +1,19 @@
+body {
+
+}
+#form_area {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+#signature_area {
+    margin-left: 400px;
+    padding: 50px 0;
+    min-height: 300px;
+}
+#code_area {
+    min-height: 200px;
+}
+#signature_main {
+    margin: auto;
+}
