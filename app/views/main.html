@@ -89,6 +89,50 @@
 </div>
 <div id="code_area">
     <code>
-        Code renderer ...
+        <pre>
+
+&lt;style&gt;
+    #signature_main {width: 400px;border: 1px solid lightgrey;box-shadow: 2px 2px 5px #979792;background-color: #FDFDFD;}
+    #signature_photo_box {display: inline-block;vertical-align: top;width: 120px;height: 120px;}
+    .signature_photo {
+        width: 80px;
+        height: 80px;
+        margin: 12px 0 0 15px;
+        border: 5px solid white;
+        box-shadow: 2px 2px 5px #979792;
+        border-radius: 5px;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
+        position:absolute;
+    }
+    #signature_photo_avatar:hover {opacity: 0;}
+    #signature_text_area {display: inline-block;width: 270px;padding-top: 15px;}
+    p {margin: 0;}
+    p img {vertical-align: middle;}
+    #signature_name {margin-top: 2px;font-family: sans-serif;}
+    #signature_company_name {margin-top: 5px;}
+    #signature_phone {margin-top: 5px;}
+    #signature_email {margin-top: 2px;}
+&lt;/style&gt;
+
+&lt;div id="signature_main"&gt;
+    &lt;div id="signature_photo_box"&gt;
+        &lt;img id="signature_photo_company_logo" class="signature_photo" src="{{company_logo_URL}}" alt="Company logo" /&gt;
+        &lt;img id="signature_photo_avatar" class="signature_photo" src="{{photo_URL}}" alt="Photo" /&gt;
+    &lt;/div&gt;
+    &lt;div id="signature_text_area"&gt;
+        &lt;p id="signature_name"&gt;{{name}}&lt;/p&gt;
+        &lt;p id="signature_company_name"&gt;{{company}} - {{job}}&lt;/p&gt;
+        &lt;p id="signature_phone"&gt;
+            &lt;img src="http://agent-22.github.io/mail-signature/img/mobile_phone.png" alt="" /&gt;  {{phone}}
+        &lt;/p&gt;
+        &lt;p id="signature_email"&gt;
+            &lt;img src="http://agent-22.github.io/mail-signature/img/mail.png" alt="" /&gt; &lt;a href="mailto:{{email}}" &gt;{{email}}&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
     </code>
 </div>
