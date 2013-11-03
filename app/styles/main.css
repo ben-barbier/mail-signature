@@ -3,13 +3,14 @@ body {
 }
 #form_area {
     width: 400px;
-    height: 400px;
+    height: 300px;
     float: left;
+    padding: 20px 0px 0px 20px;
 }
 #signature_area {
     margin-left: 400px;
     padding: 50px 0;
-    min-height: 300px;
+    min-height: 250px;
 }
 #code_area {
     min-height: 200px;
